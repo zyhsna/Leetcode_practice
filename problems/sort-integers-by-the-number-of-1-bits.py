@@ -9,5 +9,4 @@ class Solution(object):
         :type arr: List[int]
         :rtype: List[int]
         """
-        ans = []
-        
+        return sorted(arr, key=lambda x: ((bin(x)).count("1"), x))
